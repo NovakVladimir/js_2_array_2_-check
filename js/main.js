@@ -74,3 +74,10 @@ function findExpensive() {
     container_3.insertAdjacentHTML('beforeend', `<p>The most expensive purchase: ${arr[indexAr].name} - ${arr[indexAr].quantity} - ${arr[indexAr].price}$ = ${arr[indexAr].quantity * arr[indexAr].price}$</p>`);
 }
 
+function findAverage() {
+    let average = 0;
+    for(let i = 0; i < arr.length; i++) {
+        avarage = average + arr[i].price;
+    }
+    container_4.insertAdjacentHTML('beforeend', `<p>The average price: ${average}$</p>`)
+}
