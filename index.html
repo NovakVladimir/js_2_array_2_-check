@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form>
+        <p>Write the name of the product</p>
+        <input type="text" id="userProduct">
+        <p>Write which quantity of this product do you want to buy</p>
+        <input type="number" id="userQuantity">
+        <p>Write unit price</p>
+        <input type="number" id="unitPrice">
+        <br>
+        <input type="button" value="Click on me" onclick="addPurchase()">
+        <input type="button" value="Sum" onclick="findSum()">
+        <input type="button" value="Expensive" onclick="findExpensive()">
+    </form>
+    <section>
+        <div id="container">
+        </div>
+        <div id="container_2">
+        </div>
+        <div id="container_3">
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
